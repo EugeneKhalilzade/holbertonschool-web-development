@@ -1,0 +1,398 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    position: absolute;
+    width: 100%;
+}
+
+.header nav a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    background: url("assets/background-hero.png") no-repeat center/cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* HERO TEXT */
+
+.hero-content h1 {
+    font-size: 100px;
+    margin-bottom: 5px;
+}
+
+.hero-content p {
+    margin-bottom: 20px;
+    word-spacing: 40px;
+    font-size: 16px;
+}
+
+.hero-content button {
+    background: #C271FF;
+    border: none;
+    padding: 15px 30px;
+    color: white;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ================= PROS ================= */
+
+.pros {
+    margin-top: 100px;
+}
+
+.learn {
+    color: #C271FF;
+}
+.pros h2 {
+    margin-bottom: 50px;
+}
+
+.pros > div {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.pros img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.pro p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.pro img {
+    margin-bottom: 10px;
+}
+
+/* ================= QUOTE ================= */
+
+.quote {
+    background: #C271FF;
+    color: white;
+    padding: 80px 0;
+}
+
+.quote-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Image */
+.quote-container img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.quote-text {
+    max-width: 500px;
+}
+
+.quote-text blockquote {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.quote-text .author {
+    font-weight: bold;
+}
+
+.quote-text .job {
+    font-style: italic;
+    opacity: 0.8;
+}
+/* ================= VIDEOS ================= */
+
+.videos {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.videos h1 {
+    margin-bottom: 50px;
+}
+
+.videos h1 span {
+    color: #C271FF;
+}
+
+/* LIST */
+
+.videos-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* CARD */
+
+.video {
+    width: 250px;
+    text-align: left;
+}
+
+/* IMAGE */
+
+.video img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* TITLE */
+
+.video h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* TEXT */
+
+.video p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* AUTHOR */
+
+.video-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.video-author img {
+    width: 30px;
+    border-radius: 50%;
+}
+
+.video-author h3 {
+    font-size: 14px;
+    color: #C271FF;
+}
+
+/* RATING */
+
+.video-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.video-rating div {
+    display: flex;
+    gap: 5px;
+}
+
+.video-rating img {
+    width: 107px;
+    height: 15px;
+}
+
+.video-rating p {
+    font-size: 12px;
+    color: #C271FF;
+}
+
+/* ================= MEMBERSHIP ================= */
+
+.membership {
+    background: #071629;
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.membership h1 {
+    margin-bottom: 50px;
+}
+
+.membership h1 span {
+    color: #C271FF;
+}
+
+/* LIST */
+
+.membership-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto 50px;
+}
+
+/* ITEM */
+
+.membership-item {
+    width: 200px;
+}
+
+/* ICON */
+
+.membership-item img {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+/* TITLE */
+
+.membership-item h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* TEXT */
+
+.membership-item p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* BUTTON */
+
+.membership button {
+    background: #C271FF;
+    border: none;
+    padding: 15px 30px;
+    color: white;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ================= FAQ ================= */
+
+.faq {
+    padding: 80px 0;
+}
+
+.faq h1 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: 100;
+}
+
+/* CONTAINER */
+
+.faq-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* ROW */
+
+.faq-row {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+/* ITEM */
+
+.faq-item {
+    flex: 1;
+}
+
+/* QUESTION */
+
+.faq-item h2 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* TEXT */
+
+.faq-item p {
+    font-size: 14px;
+    color: #07162980;
+    line-height: 1.6;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+    background: #071629;
+    color: white;
+    padding: 40px 0;
+}
+
+/* CONTAINER */
+
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* TOP PART */
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* LOGO */
+
+.footer-top img {
+    width: 120px;
+}
+
+/* SOCIALS */
+
+.socials {
+    display: flex;
+    gap: 20px;
+}
+
+.socials img {
+    width: 20px;
+}
+
+/* TEXT */
+
+.footer p {
+    font-size: 12px;
+    opacity: 0.6;
+}
