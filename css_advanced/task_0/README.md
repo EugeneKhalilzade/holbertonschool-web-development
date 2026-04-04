@@ -1,23 +1,11 @@
-# CSS, advanced
+## CSS Advanced
 
-## Concepts
+This project is about learning to use CSS by styling a simple web page from an existing Figma designer file.
 
-For this project, we expect you to look at these concepts:
+It will focus on **CSS** styling, without using any external library.
 
-- Some pointers about CSS
-- CSS fundamentals
-- CSS advanced
+Here is the deployed **GitHub Pages** of the final result: [SmileSchool](https://gwendalminguy.github.io/holbertonschool-web-development/css_advanced/task_1/index.html)
 
-## General
+The goal of the project is to replicate a *School Page* with the following design:
 
-- What is CSS
-- How to add style to an element
-- What is a class
-- What is a selector
-- How to compute CSS Specificity Value
-- What are Box properties in CSS
-- How does the browser load a webpage
-
-## Objectives
-
-![](assets/schoolpage.png)
+<br><img src="../assets/school_page.png" alt="School Page"/><br>

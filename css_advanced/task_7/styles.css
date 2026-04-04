@@ -1,398 +1,479 @@
-/* RESET */
+@font-face {
+  font-family: SourceSansPro;
+  src: url(../assets/source-sans-pro_bold.otf);
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: SourceSansPro;
+  src: url(../assets/source-sans-pro_light.otf);
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: SourceSansPro;
+  src: url(../assets/source-sans-pro_italic.otf);
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: SourceSansPro;
+  src: url(../assets/source-sans-pro_regular.otf);
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: SpinCycleOT;
+  src: url(../assets/spin-cycle-ot.otf);
+  font-display: swap;
+}
+
+/* ----- GENERAL ----- */
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* BODY */
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+}
+
 body {
-    font-family: Arial, sans-serif;
+  background-color: white;
+  font-family: SourceSansPro;
+  color: white;
+  text-align: center;
 }
 
-/* ================= HEADER ================= */
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 60px;
-    position: absolute;
-    width: 100%;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.header nav a {
-    margin-left: 30px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+/* ----- HEADER ----- */
+
+header {
+  width: 800px;
+  margin: 0 auto;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 100;
 }
 
-/* ================= HERO ================= */
-
-.hero {
-    background: url("assets/background-hero.png") no-repeat center/cover;
-    height: 100vh;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+header div {
+  width: 234px;
+  height: 15px;
+  display: flex;
+  justify-content: space-between;
 }
 
-/* HERO TEXT */
-
-.hero-content h1 {
-    font-size: 100px;
-    margin-bottom: 5px;
+header a {
+  font-size: 12px;
+  text-decoration: none;
 }
 
-.hero-content p {
-    margin-bottom: 20px;
-    word-spacing: 40px;
-    font-size: 16px;
+/* ----- MAIN ----- */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.hero-content button {
-    background: #C271FF;
-    border: none;
-    padding: 15px 30px;
-    color: white;
-    border-radius: 25px;
-    font-weight: bold;
-    cursor: pointer;
+a {
+  font-family: SourceSansPro;
+  color: white;
+  text-align: center;
 }
 
-/* ================= PROS ================= */
-
-.pros {
-    margin-top: 100px;
+section {
+  width: 100%;
 }
 
-.learn {
-    color: #C271FF;
-}
-.pros h2 {
-    margin-bottom: 50px;
+.hero .title h1 {
+  font-size: 120px;
 }
 
-.pros > div {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
+.title p {
+  width: 100%;
+  max-width: 250px;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-bottom: 25px;
 }
 
-.pros img {
-    width: 100px;
-    border-radius: 50%;
+.title p::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
 }
 
-.pro p {
-    margin-top: 10px;
-    font-size: 16px;
+section.hero {
+  background-image: url("../assets/background.png");
+  background-size: 100% auto;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 75px;
 }
 
-.pro img {
-    margin-bottom: 10px;
+section .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 150px;
 }
 
-/* ================= QUOTE ================= */
-
-.quote {
-    background: #C271FF;
-    color: white;
-    padding: 80px 0;
+button {
+  background-color: #c271ff;
+  border-radius: 999px;
+  padding: 15px 25px;
+  border: none;
+  color: white;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.5);
 }
 
-.quote-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    max-width: 1000px;
-    margin: 0 auto;
+section .pros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 75px;
+  margin-top: 150px;
 }
 
-/* Image */
-.quote-container img {
-    width: 150px;
-    border-radius: 50%;
+section .pros h2 {
+  font-family: SourceSansPro;
+  font-weight: 300;
+  font-size: 32px;
 }
 
-.quote-text {
-    max-width: 500px;
+.purple-word {
+  font-weight: 600;
+  color: #c271ff;
 }
 
-.quote-text blockquote {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 20px;
+section .people p {
+  font-family: SourceSansPro;
+  font-weight: 300;
 }
 
-.quote-text .author {
-    font-weight: bold;
+section .people {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 125px;
+  width: 100%;
 }
 
-.quote-text .job {
-    font-style: italic;
-    opacity: 0.8;
-}
-/* ================= VIDEOS ================= */
-
-.videos {
-    padding: 80px 0;
-    text-align: center;
+section .people div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  width: 150px;
 }
 
-.videos h1 {
-    margin-bottom: 50px;
+.round-image {
+  border-radius: 50%;
 }
 
-.videos h1 span {
-    color: #C271FF;
+section.author {
+  background-color: #c271ff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-/* LIST */
-
-.videos-list {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    max-width: 1100px;
-    margin: 0 auto;
+section.author div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  padding: 50px 0;
+  width: 60%;
 }
 
-/* CARD */
-
-.video {
-    width: 250px;
-    text-align: left;
+section.author div div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
 }
 
-/* IMAGE */
-
-.video img {
-    width: 100%;
-    border-radius: 5px;
-    margin-bottom: 15px;
+section.author blockquote {
+  font-family: SourceSansPro;
+  font-weight: 300;
+  font-size: 22px;
+  padding-bottom: 25px;
+  color: white;
+  width: 120%;
+  text-align: left;
 }
 
-/* TITLE */
-
-.video h2 {
-    font-size: 16px;
-    margin-bottom: 10px;
+section.author .name {
+  font-weight: 600;
+  font-size: 22px;
 }
 
-/* TEXT */
-
-.video p {
-    font-size: 14px;
-    margin-bottom: 15px;
-    color: #555;
+section.author .occupation {
+  font-weight: 300;
+  font-size: 22px;
+  font-style: italic;
 }
 
-/* AUTHOR */
-
-.video-author {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
+section.tutorials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
 }
 
-.video-author img {
-    width: 30px;
-    border-radius: 50%;
+section.tutorials .group {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
 }
 
-.video-author h3 {
-    font-size: 14px;
-    color: #C271FF;
+section.tutorials .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  gap: 15px;
+  width: 25%;
 }
 
-/* RATING */
-
-.video-rating {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+section.tutorials h1 {
+  color: black;
+  font-weight: 300;
+  padding-bottom: 75px;
 }
 
-.video-rating div {
-    display: flex;
-    gap: 5px;
+section.tutorials h2 {
+  color: #071629;
+  text-align: left;
+  font-size: 16px;
+  width: 240px;
 }
 
-.video-rating img {
-    width: 107px;
-    height: 15px;
+section.tutorials h3 {
+  color: #c271ff;
+  font-weight: 500;
+  font-size: 14px;
 }
 
-.video-rating p {
-    font-size: 12px;
-    color: #C271FF;
+section.tutorials p {
+  font-weight: 500;
+  font-size: 14px;
+  width: 240px;
 }
 
-/* ================= MEMBERSHIP ================= */
-
-.membership {
-    background: #071629;
-    color: white;
-    text-align: center;
-    padding: 80px 0;
+.desc {
+  color: rgba(7, 22, 41, 0.5);
+  text-align: left;
 }
 
-.membership h1 {
-    margin-bottom: 50px;
+.publisher {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 240px;
+  gap: 10px;
 }
 
-.membership h1 span {
-    color: #C271FF;
+.publisher img {
+  width: 30px;
 }
 
-/* LIST */
-
-.membership-list {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    max-width: 1000px;
-    margin: 0 auto 50px;
+.review-length {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 240px;
 }
 
-/* ITEM */
-
-.membership-item {
-    width: 200px;
+.stars {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
 }
 
-/* ICON */
-
-.membership-item img {
-    width: 50px;
-    margin-bottom: 20px;
+.stars img {
+  width: 15px;
+  height: 15px;
 }
 
-/* TITLE */
-
-.membership-item h2 {
-    font-size: 16px;
-    margin-bottom: 10px;
+.length {
+  color: #c271ff;
+  text-align: right;
+  font-weight: 600;
 }
 
-/* TEXT */
-
-.membership-item p {
-    font-size: 14px;
-    opacity: 0.8;
+section.memberships {
+  background-color: #071629;
+  display: flex;
+  flex-direction: column;
+  gap: 75px;
+  align-items: center;
+  width: 100%;
+  padding: 75px;
 }
 
-/* BUTTON */
-
-.membership button {
-    background: #C271FF;
-    border: none;
-    padding: 15px 30px;
-    color: white;
-    border-radius: 25px;
-    font-weight: bold;
-    cursor: pointer;
+.memberships h1 {
+  font-weight: 300;
 }
 
-/* ================= FAQ ================= */
-
-.faq {
-    padding: 80px 0;
+.members {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 75px;
+  padding-bottom: 15px;
 }
 
-.faq h1 {
-    text-align: center;
-    margin-bottom: 60px;
-    font-weight: 100;
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  width: 200px;
 }
 
-/* CONTAINER */
-
-.faq-container {
-    max-width: 1000px;
-    margin: 0 auto;
+.member img {
+  width: 45px;
 }
 
-/* ROW */
+.member h2 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.member p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+section.faq {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 75px;
+}
+
+section.faq h1,
+section.faq h2,
+section.faq p {
+  color: #071629;
+}
+
+section.faq h1 {
+  font-size: 60px;
+  font-weight: 300;
+  padding-bottom: 50px;
+}
+
+section.faq h2 {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+}
+
+section.faq p {
+  color: rgba(7, 22, 41, 0.5);
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  line-height: 24px;
+}
+
+.faq-bloc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  width: 75%;
+}
 
 .faq-row {
-    display: flex;
-    gap: 40px;
-    margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+  width: 100%;
 }
-
-/* ITEM */
 
 .faq-item {
-    flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
 }
 
-/* QUESTION */
+/* ----- FOOTER ----- */
 
-.faq-item h2 {
-    font-size: 16px;
-    margin-bottom: 15px;
+footer {
+  background-color: #071629;
+  color: white;
+  width: 100%;
+  height: 119px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* TEXT */
-
-.faq-item p {
-    font-size: 14px;
-    color: #07162980;
-    line-height: 1.6;
+.footer-all {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 800px;
+  margin: 0 auto;
+  height: 100%;
 }
 
-/* ================= FOOTER ================= */
-
-.footer {
-    background: #071629;
-    color: white;
-    padding: 40px 0;
+.footer-logo img {
+  height: 32px; /* Adjust as needed for your logo */
 }
 
-/* CONTAINER */
-
-.footer-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: center;
+.footer-all p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0;
+  flex: 1;
+  text-align: center;
 }
-
-/* TOP PART */
-
-.footer-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-/* LOGO */
-
-.footer-top img {
-    width: 120px;
-}
-
-/* SOCIALS */
 
 .socials {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
 }
 
 .socials img {
-    width: 20px;
-}
-
-/* TEXT */
-
-.footer p {
-    font-size: 12px;
-    opacity: 0.6;
+  filter: brightness(0) invert(1);
+  width: 24px;
+  height: 24px;
 }

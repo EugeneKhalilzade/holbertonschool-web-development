@@ -1,31 +1,9 @@
-![HTML LOGO](https://www.w3.org/html/logo/downloads/HTML5_Logo_256.png)
+## HTML Advanced
 
-## HTML Structure of project
+This project is about learning to use HTML by creating a simple web page from an existing Figma designer file.
 
-### You can check the model here
+It will focus on **HTML** structure only (no CSS styling), without using any external library.
 
-The model [here](https://intranet.hbtn.io/rltoken/lhaBvvfXnyGKs9bRxokWtQ)
+The goal of the project is to replicate a *School Page* with the following design:
 
-### Different tasks
-
-0. README and objectives!
-1. Header
-2. Banner
-3. Quote
-4. Videos
-5. Membership
-6. FAQ
-7. Footer
-
-### Learning Objectives
-
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google.
-
-### Requirements
-
-- All your files should end with a new line
-- A README.md file, at the root of the folder of the project is mandatory
-- You are not allowed to install, import or use external libraries. This website must be build with only HTML/CSS/JavaScript. No NodeJS, React, VueJS, Bootstrap, etc.
-- Your code should be W3C compliant and validate with W3C-Validator
-
-<p align="center">HTML, advanced project</p>
+<br><img src="../assets/school_page.png" alt="School Page"/><br>
