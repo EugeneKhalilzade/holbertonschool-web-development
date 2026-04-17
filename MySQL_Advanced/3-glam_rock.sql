@@ -1,5 +1,5 @@
--- List glam rock bands ranked by lifespan up to 2024
--- lifespan = 2024 - formed, only for Glam rock bands
+-- List Glam rock bands ranked by lifespan up to 2024
+-- lifespan = 2024 - formed
 
 SELECT
     band_name,
