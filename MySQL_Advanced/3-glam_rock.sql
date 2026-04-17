@@ -1,9 +1,8 @@
 -- List Glam rock bands ranked by lifespan up to 2024
--- lifespan = 2024 - formed
 
 SELECT
     band_name,
     (2024 - formed) AS lifespan
 FROM metal_bands
-WHERE style = 'Glam rock'
+WHERE style LIKE '%Glam rock%'
 ORDER BY lifespan DESC;   
