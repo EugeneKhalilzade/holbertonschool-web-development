@@ -1,8 +1,6 @@
--- List Glam rock bands ranked by lifespan up to 2024
-
-SELECT
-    band_name,
-    IFNULL(2024 - formed, 0) AS lifespan
+-- Lists all Glam rock bands ranked by longevity up to 2024
+SELECT band_name,
+       IF(split IS NULL, 0, IFNULL(NULLIF(split, ''), 2024) - formed) AS lifespan
 FROM metal_bands
-WHERE style LIKE '%Glam rock%'
-ORDER BY lifespan DESC, band_name ASC;   
+WHERE FIND_IN_SET('Glam rock', style) > 0
+ORDER BY lifespan DESC;
